@@ -4,7 +4,7 @@ import { ProductDisplay } from './components/ProductDisplay';
 import { Checkout } from './components/Checkout';
 import { FloatingWidgets } from './components/FloatingWidgets';
 import { AppView } from './types';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Instagram } from 'lucide-react';
 
 export default function App() {
   const [view, setView] = useState<AppView>(AppView.LANDING);
@@ -38,7 +38,7 @@ export default function App() {
       
       {/* Header */}
       <header className={`fixed top-0 w-full z-40 transition-all duration-500 ${isScrolled ? 'bg-[#E6E4DD]/95 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'}`}>
-        <div className="max-w-7xl mx-auto px-6 flex justify-center items-center">
+        <div className="w-full flex justify-center items-center px-4">
           
           {/* Logo (Centered) - Stacked (Sun above Text), Bold & Embedded - Adjusted Size */}
           <button 
@@ -63,7 +63,7 @@ export default function App() {
                 </svg>
              </div>
              {/* Text */}
-             <h1 className="text-5xl font-serif font-bold tracking-[0.2em] text-stone-900 leading-none group-hover:text-gold-800 transition-colors drop-shadow-[0_2px_0px_rgba(255,255,255,0.7)] shadow-black">נשמה</h1>
+             <h1 className="text-5xl font-serif font-bold tracking-[0.2em] text-stone-900 leading-none group-hover:text-gold-800 transition-colors drop-shadow-[0_2px_0px_rgba(255,255,255,0.7)] shadow-black">נְשָׁמָה</h1>
           </button>
           
         </div>
@@ -138,21 +138,34 @@ export default function App() {
       <footer className="bg-[#E6E4DD] py-12 border-t border-stone-300">
         <div className="max-w-7xl mx-auto px-4 flex flex-col items-center text-center">
           
-          {/* Footer Logo Graphic */}
-          <div className="relative w-16 h-8 overflow-hidden mb-1 opacity-70">
-            <div className="absolute top-4 left-1/2 -translate-x-1/2 w-12 h-12 bg-gradient-to-t from-gold-600 via-gold-400 to-transparent rounded-full opacity-80"></div>
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gold-600/50"></div>
-            <svg className="absolute top-0 left-0 w-full h-full text-gold-600" viewBox="0 0 64 32">
-              <path d="M32 20 L32 4" stroke="currentColor" strokeWidth="1" opacity="0.6" />
-              <path d="M32 20 L42 6" stroke="currentColor" strokeWidth="1" opacity="0.5" />
-              <path d="M32 20 L22 6" stroke="currentColor" strokeWidth="1" opacity="0.5" />
-              <path d="M32 20 L50 12" stroke="currentColor" strokeWidth="1" opacity="0.4" />
-              <path d="M32 20 L14 12" stroke="currentColor" strokeWidth="1" opacity="0.4" />
+          {/* Footer Logo Graphic - Matches Header */}
+          <div className="relative w-20 h-10 overflow-hidden mb-1 drop-shadow-md opacity-80">
+            <div className="absolute top-4 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-t from-gold-600 via-gold-500 to-transparent rounded-full opacity-100 shadow-[0_0_20px_rgba(201,159,67,0.7)]"></div>
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[2px] bg-gold-700"></div>
+            {/* Rays */}
+            <svg className="absolute top-0 left-0 w-full h-full text-gold-700 drop-shadow-sm" viewBox="0 0 64 32">
+              <path d="M32 20 L32 2" stroke="currentColor" strokeWidth="2" opacity="1" />
+              <path d="M32 20 L44 4" stroke="currentColor" strokeWidth="2" opacity="0.9" />
+              <path d="M32 20 L20 4" stroke="currentColor" strokeWidth="2" opacity="0.9" />
+              <path d="M32 20 L54 10" stroke="currentColor" strokeWidth="2" opacity="0.8" />
+              <path d="M32 20 L10 10" stroke="currentColor" strokeWidth="2" opacity="0.8" />
             </svg>
           </div>
           
-          <div className="font-serif text-2xl font-bold text-stone-800 mb-4 tracking-widest">נשמה</div>
-          <p className="text-stone-600 text-sm mb-8">יודאיקה בסטנדרט אחר</p>
+          <div className="font-serif text-2xl font-bold text-stone-800 mb-4 tracking-widest">נְשָׁמָה</div>
+          <p className="text-stone-600 text-sm mb-6">רגעים של קדושה</p>
+
+          {/* Instagram Button */}
+          <a 
+            href="https://www.instagram.com/neshama._judaica?igsh=dGV2Z3B4eXVnYWpl&utm_source=qr" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="mb-8 inline-flex items-center justify-center w-12 h-12 rounded-full bg-stone-200/50 text-stone-600 hover:bg-gold-100 hover:text-gold-700 transition-all duration-300 shadow-sm hover:shadow-md border border-stone-300/50 hover:border-gold-300"
+            aria-label="Instagram"
+          >
+            <Instagram className="w-6 h-6" />
+          </a>
+
           <div className="flex justify-center gap-6 text-sm text-stone-500 font-light">
             <a href="#" className="hover:text-stone-900 transition-colors">תקנון</a>
             <span className="opacity-30">|</span>

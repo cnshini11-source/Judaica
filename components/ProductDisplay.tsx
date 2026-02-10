@@ -14,17 +14,19 @@ export const ProductDisplay: React.FC = () => {
         
         {/* Section Header */}
         <div className="flex flex-col items-center mb-16 text-center">
-          <div className="relative inline-block mb-6">
+          
+          <h2 className="text-6xl md:text-7xl font-serif text-stone-900 mb-8 tracking-tight">
+            פאר היצירה <span className="italic font-light text-stone-500">היהודית</span>
+          </h2>
+
+          <div className="relative inline-block mb-8">
               <span className="absolute -inset-1 border border-gold-400/30 transform rotate-2"></span>
               <span className="absolute -inset-1 border border-stone-900/10 transform -rotate-2"></span>
-              <span className="relative block px-6 py-2 bg-[#EBE9E1] text-gold-700 tracking-[0.3em] text-sm font-bold uppercase z-10">
-                קולקציית הפרימיום
+              <span className="relative block px-8 py-3 bg-[#EBE9E1] text-gold-800 tracking-[0.2em] text-lg font-extrabold uppercase z-10 shadow-sm border border-gold-400/20">
+                נוסח ספרד
               </span>
           </div>
           
-          <h2 className="text-6xl md:text-7xl font-serif text-stone-900 mb-4 tracking-tight">
-            פאר היצירה <span className="italic font-light text-stone-500">היהודית</span>
-          </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent"></div>
         </div>
 
@@ -38,7 +40,7 @@ export const ProductDisplay: React.FC = () => {
                 
                 {/* Image - No Border */}
                 <img 
-                    src="https://i.imgur.com/cPO80Wd.jpeg" 
+                    src="https://i.imgur.com/gm6ffSY.jpeg" 
                     alt="סידור תפילה מהודר" 
                     className="w-full h-full object-cover rounded-lg shadow-2xl relative z-0"
                 />
@@ -63,7 +65,7 @@ export const ProductDisplay: React.FC = () => {
 
                 {/* Image - No Border */}
                 <img 
-                    src="https://i.imgur.com/wOejemG.jpeg" 
+                    src="https://i.imgur.com/xPL7f5K.jpeg" 
                     alt="ספר תהילים מהודר" 
                     className="w-full h-full object-cover rounded-lg shadow-2xl relative z-0"
                 />

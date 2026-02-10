@@ -59,7 +59,7 @@ export const FloatingWidgets: React.FC = () => {
     <>
       {/* WhatsApp Button - Bottom Right (Original Icon) */}
       <a
-        href="https://wa.me/972500000000?text=שלום, אשמח לקבל פרטים נוספים על סט הסידור והתהילים."
+        href="https://wa.me/972546875924?text=שלום, אשמח לקבל פרטים נוספים על סט הסידור והתהילים."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-xl hover:scale-110 transition-transform duration-300 hover:shadow-green-900/20 group"
