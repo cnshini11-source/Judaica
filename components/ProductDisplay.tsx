@@ -1,7 +1,11 @@
 import React from 'react';
 import { Plus } from 'lucide-react';
 
-export const ProductDisplay: React.FC = () => {
+interface ProductDisplayProps {
+  onBuyClick: () => void;
+}
+
+export const ProductDisplay: React.FC<ProductDisplayProps> = ({ onBuyClick }) => {
   return (
     <section className="py-24 bg-[#EBE9E1] relative overflow-hidden">
       
@@ -101,6 +105,20 @@ export const ProductDisplay: React.FC = () => {
                </p>
             </div>
 
+        </div>
+
+        {/* Buy Button Below Features */}
+        <div className="mt-16 flex justify-center">
+            <button
+              onClick={onBuyClick}
+              className="group relative px-12 py-4 bg-stone-900 text-gold-50 text-lg md:text-xl font-serif tracking-widest hover:bg-gold-600 transition-all duration-500 shadow-xl hover:shadow-2xl hover:-translate-y-1 overflow-hidden font-bold"
+            >
+              <span className="relative z-10 flex items-center gap-3">
+                 רכשו עכשיו
+              </span>
+              {/* Shine effect */}
+              <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-20 group-hover:animate-shine" />
+            </button>
         </div>
 
       </div>

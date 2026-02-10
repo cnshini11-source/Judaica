@@ -53,14 +53,13 @@ export const Hero: React.FC<HeroProps> = ({ onBuyClick }) => {
         </div>
 
         {/* Pricing Display - Elegant & Large */}
-        <div className="flex flex-col items-center gap-1 mb-10 relative">
-           {/* Subtle background glow for price */}
-           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gold-200/40 blur-3xl rounded-full -z-10"></div>
+        <div className="flex flex-col items-center gap-2 mb-10 relative">
            
            <span className="text-gold-800 font-serif text-lg tracking-widest font-bold">מחיר מיוחד לזמן מוגבל</span>
            <div className="flex items-baseline gap-6">
               <span className="text-2xl md:text-3xl text-stone-400 line-through decoration-gold-400/60 decoration-1 font-serif font-light">380 ₪</span>
-              <span className="text-6xl md:text-8xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-br from-gold-500 via-gold-600 to-gold-800 drop-shadow-sm">300 ₪</span>
+              {/* Updated: Smaller size, less bold, classic gold color */}
+              <span className="text-5xl md:text-7xl font-serif font-medium text-[#C49B45] drop-shadow-sm tracking-tight">300 ₪</span>
            </div>
         </div>
 

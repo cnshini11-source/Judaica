@@ -3,6 +3,7 @@ import { Hero } from './components/Hero';
 import { ProductDisplay } from './components/ProductDisplay';
 import { Checkout } from './components/Checkout';
 import { FloatingWidgets } from './components/FloatingWidgets';
+import { LegalPages } from './components/LegalPages';
 import { AppView } from './types';
 import { CheckCircle, Instagram } from 'lucide-react';
 
@@ -30,6 +31,11 @@ export default function App() {
 
   const handleSuccess = () => {
     setView(AppView.SUCCESS);
+    window.scrollTo(0, 0);
+  };
+
+  const handleViewChange = (newView: AppView) => {
+    setView(newView);
     window.scrollTo(0, 0);
   };
 
@@ -102,7 +108,7 @@ export default function App() {
               </div>
             </section>
 
-            <ProductDisplay />
+            <ProductDisplay onBuyClick={handleBuyClick} />
           </>
         )}
 
@@ -131,6 +137,18 @@ export default function App() {
               </button>
             </div>
           </div>
+        )}
+
+        {view === AppView.REGULATIONS && (
+          <LegalPages type="REGULATIONS" onBack={handleBackToStore} />
+        )}
+
+        {view === AppView.TERMS && (
+          <LegalPages type="TERMS" onBack={handleBackToStore} />
+        )}
+
+        {view === AppView.ACCESSIBILITY && (
+          <LegalPages type="ACCESSIBILITY" onBack={handleBackToStore} />
         )}
       </main>
 
@@ -167,11 +185,11 @@ export default function App() {
           </a>
 
           <div className="flex justify-center gap-6 text-sm text-stone-500 font-light">
-            <a href="#" className="hover:text-stone-900 transition-colors">תקנון</a>
+            <button onClick={() => handleViewChange(AppView.REGULATIONS)} className="hover:text-stone-900 transition-colors">תקנון ורכישה</button>
             <span className="opacity-30">|</span>
-            <a href="#" className="hover:text-stone-900 transition-colors">פרטיות</a>
+            <button onClick={() => handleViewChange(AppView.TERMS)} className="hover:text-stone-900 transition-colors">תנאי שימוש</button>
             <span className="opacity-30">|</span>
-            <a href="#" className="hover:text-stone-900 transition-colors">נגישות</a>
+            <button onClick={() => handleViewChange(AppView.ACCESSIBILITY)} className="hover:text-stone-900 transition-colors">נגישות</button>
           </div>
           <p className="text-stone-400 text-xs mt-8">© 2024 כל הזכויות שמורות</p>
         </div>

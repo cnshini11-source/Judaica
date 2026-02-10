@@ -9,7 +9,10 @@ export interface Product {
 export enum AppView {
   LANDING = 'LANDING',
   CHECKOUT = 'CHECKOUT',
-  SUCCESS = 'SUCCESS'
+  SUCCESS = 'SUCCESS',
+  REGULATIONS = 'REGULATIONS', // תקנון
+  TERMS = 'TERMS',             // תנאי שימוש
+  ACCESSIBILITY = 'ACCESSIBILITY' // נגישות
 }
 
 export interface CartItem {
