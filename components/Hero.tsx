@@ -53,19 +53,25 @@ export const Hero: React.FC<HeroProps> = ({ onBuyClick }) => {
         </div>
 
         {/* Pricing Display - Elegant & Large */}
-        <div className="flex flex-col items-center gap-2 mb-10 relative">
+        <div className="flex flex-col items-center gap-3 mb-10 relative">
            
-           <span className="text-gold-800 font-serif text-lg tracking-widest font-bold">מחיר מיוחד לזמן מוגבל</span>
-           <div className="flex items-baseline gap-6">
-              <span className="text-2xl md:text-3xl text-stone-400 line-through decoration-gold-400/60 decoration-1 font-serif font-light">280 ₪</span>
-              {/* Updated: Smaller size, less bold, classic gold color */}
-              <span className="text-5xl md:text-7xl font-serif font-medium text-[#C49B45] drop-shadow-sm tracking-tight">230 ₪</span>
+           <span className="text-stone-900 font-serif text-xl md:text-2xl tracking-[0.15em] font-extrabold drop-shadow-sm">
+             מחיר מיוחד לזמן מוגבל
+           </span>
+           
+           <div className="flex items-baseline gap-6 md:gap-8">
+              <span className="text-3xl md:text-4xl text-stone-500 line-through decoration-stone-400/80 decoration-2 font-serif font-medium opacity-70">
+                280 ₪
+              </span>
+              <span className="text-6xl md:text-8xl font-serif font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-[#B8860B] via-[#D4AF37] to-[#8B6508] drop-shadow-sm tracking-tight py-2">
+                230 ₪
+              </span>
            </div>
 
            {/* Free Shipping Badge */}
-           <div className="flex items-center gap-3 mt-3 bg-gold-50/80 backdrop-blur-sm px-6 py-2 rounded-full border border-gold-200 shadow-sm animate-pulse-slow">
-              <Truck className="w-5 h-5 text-gold-600" strokeWidth={2} />
-              <span className="text-stone-800 font-bold font-serif text-lg tracking-wide">משלוח חינם עד בית הלקוח</span>
+           <div className="flex items-center gap-3 mt-2 bg-white/60 backdrop-blur-md px-6 py-2 rounded-full border border-gold-300/30 shadow-sm animate-pulse-slow">
+              <Truck className="w-5 h-5 text-gold-700" strokeWidth={2} />
+              <span className="text-stone-900 font-bold font-serif text-lg tracking-wide">משלוח חינם עד בית הלקוח</span>
            </div>
         </div>
 

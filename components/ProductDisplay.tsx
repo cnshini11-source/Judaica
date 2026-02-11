@@ -85,23 +85,23 @@ export const ProductDisplay: React.FC<ProductDisplayProps> = ({ onBuyClick }) =>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-stone-300 pt-16">
             
             <div className="text-center px-4">
-               <h3 className="text-2xl font-serif text-stone-900 mb-4">קריאה נעימה</h3>
-               <p className="text-stone-600 font-light leading-relaxed">
-                  אותיות גדולות וברורות על נייר בגוון שמנת, המקלות על העיניים ומאפשרות כוונה מלאה בתפילה.
+               <h3 className="text-2xl font-serif text-stone-900 mb-4 font-bold">קריאה מאירת עיניים</h3>
+               <p className="text-stone-600 font-light leading-relaxed text-lg">
+                  אותיות <span className="font-bold text-stone-800">גדולות וברורות</span> המודפסות על נייר בגוון <span className="font-bold text-stone-800">שמנת איכותי</span>, המקלות על העיניים ומאפשרות <span className="font-bold text-gold-700">כוונה מלאה</span> בזמן התפילה.
                </p>
             </div>
 
             <div className="text-center px-4 border-r-0 md:border-r border-stone-300">
-               <h3 className="text-2xl font-serif text-stone-900 mb-4">כריכה רכה ומהודרת</h3>
-               <p className="text-stone-600 font-light leading-relaxed">
-                  כריכה גמישה ונעימה למגע במראה עור יוקרתי, המשלבת נוחות שימוש עם עיצוב נקי ואלגנטי.
+               <h3 className="text-2xl font-serif text-stone-900 mb-4 font-bold">עיצוב קורדרוי יוקרתי</h3>
+               <p className="text-stone-600 font-light leading-relaxed text-lg">
+                  כריכה רכה בטקסטורת <span className="font-bold text-stone-800">בד קורדרוי</span> עדין ונעים למגע, המשלבת <span className="font-bold text-stone-800">רכות וגמישות</span> עם מראה <span className="font-bold text-gold-700">אופנתי ומהודר</span>.
                </p>
             </div>
 
             <div className="text-center px-4 border-r-0 md:border-r border-stone-300">
-               <h3 className="text-2xl font-serif text-stone-900 mb-4">מתנה מושלמת</h3>
-               <p className="text-stone-600 font-light leading-relaxed">
-                  שילוב מנצח של סידור ותהילים בסט אחד. מתנה מלאת משמעות לכל בית, חג או אירוע משמח.
+               <h3 className="text-2xl font-serif text-stone-900 mb-4 font-bold">מתנה עם נשמה</h3>
+               <p className="text-stone-600 font-light leading-relaxed text-lg">
+                  השילוב המושלם של <span className="font-bold text-stone-800">סידור ותהילים</span> בסט אחד. מתנה <span className="font-bold text-stone-800">מרגשת וערכית</span> המתאימה לכל בית, חג או <span className="font-bold text-gold-700">שמחה משפחתית</span>.
                </p>
             </div>
 
