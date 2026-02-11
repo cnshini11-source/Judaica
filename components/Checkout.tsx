@@ -48,14 +48,14 @@ export const Checkout: React.FC<CheckoutProps> = ({ onBack, onSuccess }) => {
                 <div>
                   <h3 className="font-bold text-stone-800 font-serif text-lg">סט תפילה מלכותי</h3>
                   <p className="text-sm text-stone-500">סידור + תהילים (כריכה רכה)</p>
-                  <p className="text-gold-600 font-bold mt-1 text-lg">300 ₪</p>
+                  <p className="text-gold-600 font-bold mt-1 text-lg">230 ₪</p>
                 </div>
               </div>
 
               <div className="space-y-2 text-sm text-stone-600 border-t border-stone-100 pt-4 mb-4">
                 <div className="flex justify-between">
                   <span>סכום ביניים</span>
-                  <span>300 ₪</span>
+                  <span>230 ₪</span>
                 </div>
                 <div className="flex justify-between text-stone-500">
                   <span>משלוח עם שליח</span>
@@ -65,7 +65,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ onBack, onSuccess }) => {
 
               <div className="flex justify-between font-bold text-2xl text-stone-900 border-t border-stone-100 pt-4 font-serif">
                 <span>סה"כ לתשלום</span>
-                <span>300 ₪</span>
+                <span>230 ₪</span>
               </div>
               
               <div className="mt-6 flex items-center justify-center gap-2 text-xs text-stone-400">
@@ -145,7 +145,7 @@ export const Checkout: React.FC<CheckoutProps> = ({ onBack, onSuccess }) => {
                                 </div>
                             </div>
                             <p className="text-stone-600 text-base leading-relaxed">
-                                התשלום המלא (300 ₪) יתבצע במזומן ישירות לשליח בעת קבלת החבילה בביתכם.
+                                התשלום המלא (230 ₪) יתבצע במזומן ישירות לשליח בעת קבלת החבילה בביתכם.
                                 <br/>
                                 <span className="text-sm font-bold text-gold-700 mt-1 inline-block">אין צורך בכרטיס אשראי באתר.</span>
                             </p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown, Star } from 'lucide-react';
+import { ChevronDown, Star, Truck } from 'lucide-react';
 
 interface HeroProps {
   onBuyClick: () => void;
@@ -7,7 +7,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onBuyClick }) => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden pt-20">
+    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden pt-40 md:pt-32 pb-12">
       
       {/* Background Image with Elegant Gradient Overlays */}
       <div className="absolute inset-0 z-0">
@@ -26,7 +26,7 @@ export const Hero: React.FC<HeroProps> = ({ onBuyClick }) => {
       <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center animate-fade-in-up">
         
         {/* Badge */}
-        <div className="flex items-center gap-3 mb-6 mt-8">
+        <div className="flex items-center gap-3 mb-6 mt-6 md:mt-0">
            <div className="h-[1px] w-8 bg-gold-400"></div>
            <span className="text-gold-800 text-xs md:text-base font-serif tracking-[0.25em] uppercase font-extrabold drop-shadow-sm">
               הנמכר ביותר למתנות ואירועים
@@ -57,9 +57,15 @@ export const Hero: React.FC<HeroProps> = ({ onBuyClick }) => {
            
            <span className="text-gold-800 font-serif text-lg tracking-widest font-bold">מחיר מיוחד לזמן מוגבל</span>
            <div className="flex items-baseline gap-6">
-              <span className="text-2xl md:text-3xl text-stone-400 line-through decoration-gold-400/60 decoration-1 font-serif font-light">380 ₪</span>
+              <span className="text-2xl md:text-3xl text-stone-400 line-through decoration-gold-400/60 decoration-1 font-serif font-light">280 ₪</span>
               {/* Updated: Smaller size, less bold, classic gold color */}
-              <span className="text-5xl md:text-7xl font-serif font-medium text-[#C49B45] drop-shadow-sm tracking-tight">300 ₪</span>
+              <span className="text-5xl md:text-7xl font-serif font-medium text-[#C49B45] drop-shadow-sm tracking-tight">230 ₪</span>
+           </div>
+
+           {/* Free Shipping Badge */}
+           <div className="flex items-center gap-3 mt-3 bg-gold-50/80 backdrop-blur-sm px-6 py-2 rounded-full border border-gold-200 shadow-sm animate-pulse-slow">
+              <Truck className="w-5 h-5 text-gold-600" strokeWidth={2} />
+              <span className="text-stone-800 font-bold font-serif text-lg tracking-wide">משלוח חינם עד בית הלקוח</span>
            </div>
         </div>
 

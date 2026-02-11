@@ -79,7 +79,7 @@ export const FloatingWidgets: React.FC = () => {
         {!isAccessMenuOpen ? (
           <button
             onClick={toggleAccessMenu}
-            className="bg-blue-600 text-white p-3 rounded-r-lg shadow-lg hover:bg-blue-700 transition-colors"
+            className="bg-stone-800 text-gold-50 p-3 rounded-r-lg shadow-lg hover:bg-stone-900 transition-colors border-l-0 border border-stone-700"
             aria-label="Accessibility Menu"
           >
             <Eye className="w-6 h-6" />
@@ -98,7 +98,7 @@ export const FloatingWidgets: React.FC = () => {
                 onClick={handleZoom}
                 className="w-full flex items-center gap-4 p-3 hover:bg-stone-50 rounded-lg text-right transition border border-transparent hover:border-stone-200"
               >
-                <div className="bg-blue-50 p-2 rounded text-blue-600"><ZoomIn className="w-5 h-5" /></div>
+                <div className="bg-gold-50 p-2 rounded text-gold-700"><ZoomIn className="w-5 h-5" /></div>
                 <span className="text-sm font-medium">הגדלת טקסט (X{fontSize === 100 ? '1' : (fontSize === 110 ? '2' : '3')})</span>
               </button>
               
@@ -106,7 +106,7 @@ export const FloatingWidgets: React.FC = () => {
                 onClick={handleContrastToggle}
                 className={`w-full flex items-center gap-4 p-3 rounded-lg text-right transition border ${highContrast ? 'bg-stone-900 text-white border-stone-900' : 'hover:bg-stone-50 border-transparent hover:border-stone-200'}`}
               >
-                <div className={`${highContrast ? 'bg-white/20 text-white' : 'bg-blue-50 text-blue-600'} p-2 rounded`}><Sun className="w-5 h-5" /></div>
+                <div className={`${highContrast ? 'bg-white/20 text-white' : 'bg-gold-50 text-gold-700'} p-2 rounded`}><Sun className="w-5 h-5" /></div>
                 <span className="text-sm font-medium">ניגודיות חדה</span>
               </button>
 
@@ -114,7 +114,7 @@ export const FloatingWidgets: React.FC = () => {
                 onClick={handleGrayscaleToggle}
                 className={`w-full flex items-center gap-4 p-3 rounded-lg text-right transition border ${grayscale ? 'bg-stone-200 border-stone-300' : 'hover:bg-stone-50 border-transparent hover:border-stone-200'}`}
               >
-                <div className="bg-blue-50 p-2 rounded text-blue-600"><Monitor className="w-5 h-5" /></div>
+                <div className="bg-gold-50 p-2 rounded text-gold-700"><Monitor className="w-5 h-5" /></div>
                 <span className="text-sm font-medium">גווני אפור</span>
               </button>
 
@@ -122,12 +122,12 @@ export const FloatingWidgets: React.FC = () => {
                 onClick={handleHighlightLinks}
                 className="w-full flex items-center gap-4 p-3 hover:bg-stone-50 rounded-lg text-right transition border border-transparent hover:border-stone-200"
               >
-                 <div className="bg-blue-50 p-2 rounded text-blue-600"><Link className="w-5 h-5" /></div>
+                 <div className="bg-gold-50 p-2 rounded text-gold-700"><Link className="w-5 h-5" /></div>
                 <span className="text-sm font-medium">הדגשת קישורים</span>
               </button>
               
               <button className="w-full flex items-center gap-4 p-3 hover:bg-stone-50 rounded-lg text-right transition border border-transparent hover:border-stone-200">
-                <div className="bg-blue-50 p-2 rounded text-blue-600"><Type className="w-5 h-5" /></div>
+                <div className="bg-gold-50 p-2 rounded text-gold-700"><Type className="w-5 h-5" /></div>
                 <span className="text-sm font-medium">גופן קריא</span>
               </button>
 
